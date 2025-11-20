@@ -50,3 +50,16 @@
 
 # Embedded web-server pid file
 /.web-server-pid
+
+# Node
+/node_modules/
+npm-debug.log
+yarn-error.log
+
+# Webpack Encore
+/public/build/
+
+# Environment files
+/.env.local
+/.env.local.php
+/.env.*.local
