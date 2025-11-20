@@ -1,0 +1,43 @@
+@layer components {
+  /* Buttons */
+  .btn { @apply inline-flex items-center justify-center font-medium rounded-md transition; }
+  .btn-primary { @apply bg-primary-600 text-white px-6 py-3 shadow-md hover:bg-primary-700; }
+  .btn-outline { @apply border border-white text-white px-4 py-2 rounded hover:bg-white hover:text-primary-600; }
+  .btn-white { @apply bg-white text-primary-600 hover:bg-gray-100 shadow-xl; }
+  .btn-lg { @apply text-lg px-8 py-4; }
+
+  /* Navigation */
+  .site-nav { @apply fixed w-full bg-white shadow-md z-50; }
+  .site-nav__container { @apply container mx-auto px-4 sm:px-6 lg:px-8; }
+  .site-nav__brand { @apply text-2xl font-bold; }
+  .site-nav__links { @apply hidden md:flex space-x-8; }
+  .site-nav__link { @apply text-secondary-600 hover:text-primary-600 transition-colors; }
+  .mobile-menu-button { @apply text-secondary-600 hover:text-primary-600 focus:outline-none md:hidden; }
+  .mobile-menu { @apply hidden md:hidden; }
+  .mobile-menu__item { @apply block px-3 py-2 text-secondary-600 hover:text-primary-600 hover:bg-secondary-50 rounded-md; }
+
+  /* Hero */
+  .hero { @ apply hero-gradient text-white py-20 md:py-32; }
+  .hero__title { @ apply text-5xl md:text-6xl lg:text-7xl font-bold mb-6 animate-slide-up; }
+  .hero__subtitle { @ apply text-xl md:text-2xl mb-8 text-gray-100 opacity-90; }
+  .hero__actions { @ apply flex flex-col sm:flex-row gap-4 justify-center; }
+
+  /* Sections */
+  .section-title { @ apply text-3xl font-bold mb-4; }
+  .section-subtitle { @ apply text-secondary-600 max-w-2xl mx-auto mb-8; }
+
+  /* Cards / Content */
+  .card { @ apply bg-white rounded-lg shadow p-6; }
+  .service-card { @ apply p-6 bg-white rounded-lg shadow; }
+  .icon-box { @ apply flex items-center justify-center w-12 h-12 bg-primary-100 rounded-lg p-3 mr-4; }
+  .service-feature { @ apply flex items-center text-sm text-secondary-700; }
+
+  /* Technologies */
+  .tech-badge { @ apply inline-block bg-secondary-100 text-secondary-900 px-2 py-1 rounded-full text-sm; }
+
+  /* Footer */
+  .footer { @ apply bg-secondary-900 text-white py-12; }
+  .footer__container { @ apply container mx-auto px-4 sm:px-6 lg:px-8; }
+  .footer__brand { @ apply text-2xl font-bold mb-4 text-gradient; }
+  .footer__links a { @ apply text-secondary-400 hover:text-white transition-colors; }
+}
