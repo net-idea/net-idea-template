@@ -11,7 +11,7 @@ Website template of the net-idea web agency
 
 ## Requirements
 
-- PHP 8.3+
+- PHP 8.1 or higher
 - Composer
 - SQLite (or MySQL/PostgreSQL)
 
