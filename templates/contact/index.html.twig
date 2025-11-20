@@ -1,0 +1,54 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}Contact Us{% endblock %}
+
+{% block body %}
+<div class="row justify-content-center">
+    <div class="col-md-8 col-lg-6">
+        <div class="card shadow">
+            <div class="card-header bg-primary text-white">
+                <h2 class="mb-0">Contact Us</h2>
+            </div>
+            <div class="card-body">
+                <p class="text-muted mb-4">Fill out the form below to get in touch with us. We'll respond as soon as possible.</p>
+                
+                {{ form_start(form) }}
+                    <div class="mb-3">
+                        {{ form_label(form.name, null, {'label_attr': {'class': 'form-label'}}) }}
+                        {{ form_widget(form.name) }}
+                        {{ form_errors(form.name) }}
+                    </div>
+
+                    <div class="mb-3">
+                        {{ form_label(form.email, null, {'label_attr': {'class': 'form-label'}}) }}
+                        {{ form_widget(form.email) }}
+                        {{ form_errors(form.email) }}
+                    </div>
+
+                    <div class="mb-3">
+                        {{ form_label(form.subject, null, {'label_attr': {'class': 'form-label'}}) }}
+                        {{ form_widget(form.subject) }}
+                        {{ form_errors(form.subject) }}
+                    </div>
+
+                    <div class="mb-3">
+                        {{ form_label(form.message, null, {'label_attr': {'class': 'form-label'}}) }}
+                        {{ form_widget(form.message) }}
+                        {{ form_errors(form.message) }}
+                    </div>
+
+                    <div class="d-grid">
+                        <button type="submit" class="btn btn-primary btn-lg">
+                            <i class="bi bi-send"></i> Send Message
+                        </button>
+                    </div>
+                {{ form_end(form) }}
+            </div>
+        </div>
+        
+        <div class="text-center mt-4 text-muted">
+            <small>Your information will be stored securely and used only to respond to your inquiry.</small>
+        </div>
+    </div>
+</div>
+{% endblock %}
